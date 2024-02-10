@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 960px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #F8F8FF;
+  display: flex;
+  justify-content: space-between;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container .logo {
+  display: flex;
+  align-items: center;
+}
+nav .container .logo h1 {
+  padding: 8px;
+  font-weight: bold;
+}
+nav .container .logo img {
+  height: 70px;
+}
+nav .container .barra-de-pesquisa {
+  display: flex;
+  align-items: center;
+}
+nav .container .barra-de-pesquisa input {
+  margin: 0;
+  padding: 6px 26px;
+}
+nav .container .barra-de-pesquisa button {
+  margin: 0;
+  padding: 2px;
+  background-color: black;
+}
+nav .container .barra-de-pesquisa button img {
+  filter: invert(1);
+  cursor: pointer;
+}
+nav .container .carrinho-de-compras {
+  position: relative;
+  align-items: center;
+}
+nav .container .carrinho-de-compras img {
+  cursor: pointer;
+}
+nav .container .carrinho-de-compras .carrinho {
+  display: none;
+  position: absolute;
+  left: -120px;
+  width: 280px;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid black;
+}
+nav .container .carrinho-de-compras .carrinho .container {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+nav .container .carrinho-de-compras .carrinho .container .row {
+  padding: 8px;
+  max-width: 100%;
+}
+nav .container .carrinho-de-compras .carrinho .container .carrinho-footer {
+  display: flex;
+}
+nav .container .carrinho-de-compras .carrinho .container .carrinho-footer .carrinho-button {
+  padding: 3px;
+  background-color: green;
+  border: 1px solid black;
+}
+nav .container .carrinho-de-compras .carrinho .container .carrinho-footer .carrinho-button a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+nav .container .carrinho-de-compras .carrinho .container .carrinho-footer .carrinho-button:hover {
+  background-color: rgb(0, 143, 0);
+}
+nav .container .carrinho-de-compras .carrinho .container .carrinho-footer .fechar {
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.atalhos {
+  background-color: #FFD700;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid black;
+}
+.atalhos .container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.atalhos .container ul li {
+  text-align: center;
+  width: 100%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 24px;
+  list-style: none;
+}
+.atalhos .container ul li a {
+  text-decoration: none;
+}
+
+.carrossel {
+  margin-top: 20px;
+}
+.carrossel .container {
+  background-color: #FFD700;
+  padding: 30px;
+}
+.carrossel .container h2 {
+  margin-bottom: 10px;
+}
+.carrossel .container #carrossel-imagens img {
+  height: 270px;
+  margin-left: 25px;
+}/*# sourceMappingURL=style.css.map */
