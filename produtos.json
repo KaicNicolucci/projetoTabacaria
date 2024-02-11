@@ -1,0 +1,30 @@
+[
+    {
+        "id":0,
+        "nome": "Narguile Mini Monster",
+        "valor": 149.90,
+        "variavel": "preto",
+        "imagem": "./imagem/produtos/narguilePreto.jpeg"
+    },
+    {
+        "id":1,
+        "nome": "Narguile Mini Monster",
+        "valor": 149.90,
+        "variavel": "rosa",
+        "imagem": "./imagem/produtos/narguileRosa.jpeg"
+    },
+    {
+        "id":2,
+        "nome": "Narguile Mini Monster",
+        "valor": 149.90,
+        "variavel": "rosa e azul",
+        "imagem": "./imagem/produtos/narguileRosaEAzul.jpeg"
+    },
+    {
+        "id": 3,
+        "nome": "Narguile Mini Monster",
+        "valor": 149.90,
+        "variavel": "rosa e branco",
+        "imagem": "./imagem/produtos/narguileRosaEBranco.jpeg"
+    }
+]

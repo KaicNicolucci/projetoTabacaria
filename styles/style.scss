@@ -124,24 +124,10 @@ nav {
                     text-decoration: none;
                     font-weight: bold;
                 }
-            }
-        }
-    }
-}
-
-.carrossel{
-    margin-top: 20px;
-    .container{
-        background-color: #FFD700;
-        padding: 30px;
-        h2{
-            margin-bottom: 10px;
-        }
-        #carrossel-imagens{
-            img{
-                height: 270px;
-                margin-left: 25px;
-            }
-        }
-    }
-}
+                a:hover{
+                    color: #fff;
+                };
+            };
+        };
+    };
+};
