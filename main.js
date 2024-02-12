@@ -28,31 +28,21 @@ inicializarLoja = () => {
       });
 
       $('.narguiles').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
       });
+      $('.carrossel-informacoes-start').slick({
+        autoplay: true
+      })
+
     })
+
     .catch(error => console.error('Erro ao carregar o JSON:', error));
 };
 
 inicializarLoja();
-
-$(document).ready(function(){
-
-  // Barra de Navegação
-    $('.para-clicar').click(function(e){
-        $('.carrinho').slideDown();
-    })
-    $('.fechar').click(function(e){
-        $('.carrinho').slideUp();
-    })
-
-  //Narguiles Pequenos
-  $('.narguiles').slick({
-      
-  })
-
-})
-
-
 
 adicionarAoCarrinho = (id) => {
   let produto = produtosData.find((val) => val.id === id);
@@ -101,8 +91,6 @@ atualizarCarrinho = () => {
 somaDosValores = 0;
 let resultado;
 
-console.log(carrinho);
-
 valorTotalCarrinho = () =>{
   acumulaValor.forEach((valores)=>{
     somaDosValores += valores;
@@ -113,3 +101,8 @@ valorTotalCarrinho = () =>{
   valorTotal.textContent = `Valor Total: R$${resultado}`
 }
 
+
+
+  carrinho.map((keys)=>{
+    console.log(`${keys}: ${carrinho[keys]}`);
+  })
