@@ -8,10 +8,16 @@ $background-color: #F8F8FF	;
     font-family: sans-serif;
 }
 
+body{
+    background-color: #ccc;
+}
+
 .container{
     width: 960px;
     max-width: 100%;
     margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
 }
 
 
@@ -108,6 +114,7 @@ nav {
     box-shadow: 3px 3px 3px 3px rgba($color: #000000, $alpha: 0.3);
     border: 1px solid black;
     .container{
+        background-color: #FFD700;
         ul{
             display: flex;
             justify-content: center;
@@ -131,3 +138,65 @@ nav {
         };
     };
 };
+
+.narguiles-section{
+    .container{
+        padding: 8px;
+    }
+    margin-top: 20px;
+    h2{
+        margin-left: 5px;
+    }
+    .narguiles{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 100%;
+        overflow: hidden;
+        .produto-single{
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            margin: 10px;  
+            align-items: center;  
+            .produto-image img{
+                height: 300px;
+            }
+            .informacoes-produtos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .nome-produto{
+                    color: black;
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                .valor-produto{
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                    font-size: 32px;
+                }
+                .variavel{
+                    
+                }
+                .add-cart{
+                    cursor: pointer;
+                    padding: 8px;
+                    background-color: $primary-color;
+                    border: none;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.item-carrinho{
+    display: block;
+    .container-carrinho{
+        display: flex;
+        img{
+            height: 80px;
+        }
+    }
+}

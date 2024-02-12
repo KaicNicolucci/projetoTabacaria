@@ -5,10 +5,16 @@
   font-family: sans-serif;
 }
 
+body {
+  background-color: #ccc;
+}
+
 .container {
   width: 960px;
   max-width: 100%;
   margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 nav {
@@ -104,6 +110,9 @@ nav .container .carrinho-de-compras .carrinho .container .carrinho-footer .fecha
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
   border: 1px solid black;
 }
+.atalhos .container {
+  background-color: #FFD700;
+}
 .atalhos .container ul {
   display: flex;
   justify-content: center;
@@ -122,18 +131,65 @@ nav .container .carrinho-de-compras .carrinho .container .carrinho-footer .fecha
   text-decoration: none;
   font-weight: bold;
 }
+.atalhos .container ul li a:hover {
+  color: #fff;
+}
 
-.carrossel {
+.narguiles-section {
   margin-top: 20px;
 }
-.carrossel .container {
+.narguiles-section .container {
+  padding: 8px;
+}
+.narguiles-section h2 {
+  margin-left: 5px;
+}
+.narguiles-section .narguiles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+.narguiles-section .narguiles .produto-single {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin: 10px;
+  align-items: center;
+}
+.narguiles-section .narguiles .produto-single .produto-image img {
+  height: 300px;
+}
+.narguiles-section .narguiles .produto-single .informacoes-produtos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.narguiles-section .narguiles .produto-single .informacoes-produtos .nome-produto {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+.narguiles-section .narguiles .produto-single .informacoes-produtos .valor-produto {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+.narguiles-section .narguiles .produto-single .informacoes-produtos .add-cart {
+  cursor: pointer;
+  padding: 8px;
   background-color: #FFD700;
-  padding: 30px;
+  border: none;
+  font-weight: 500;
 }
-.carrossel .container h2 {
-  margin-bottom: 10px;
+
+.item-carrinho {
+  display: block;
 }
-.carrossel .container #carrossel-imagens img {
-  height: 270px;
-  margin-left: 25px;
+.item-carrinho .container-carrinho {
+  display: flex;
+}
+.item-carrinho .container-carrinho img {
+  height: 80px;
 }/*# sourceMappingURL=style.css.map */
