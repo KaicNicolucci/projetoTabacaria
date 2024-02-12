@@ -216,6 +216,13 @@ nav .container .carrinho-de-compras .carrinho .container .carrinho-footer .fecha
 .item-carrinho .container-carrinho img {
   height: 80px;
 }
+.item-carrinho .container-carrinho button {
+  cursor: pointer;
+  background-color: #ccc;
+  font-weight: bold;
+  padding: 3px;
+  margin: 4px;
+}
 
 footer .container {
   padding: 8px;

@@ -1,7 +1,6 @@
 let produtosData;
 let carrinho = [];
 let addCart = document.querySelector('.row');
-let acumulaValor = [];
 
 inicializarLoja = () => {
   let narguiles = document.querySelector('.narguiles');
@@ -62,7 +61,6 @@ adicionarAoCarrinho = (id) => {
         quantidade: 1
       });
     }
-    acumulaValor.push(Number(produto.valor))
     atualizarCarrinho();
   }
 };
@@ -79,6 +77,7 @@ atualizarCarrinho = () => {
             <span class="item-nome">${item.nome}</span>
             <span class="item-variavel">${item.variavel}</span>
             <p>R$<span class="valor">${item.valor} </span><span class="qtd-produto">${item.quantidade}x</span></p>
+            <button onclick="removerDoCarrinho(${item.id})">Remover</button>
           </div>        
         </div>
         <hr>
@@ -88,21 +87,27 @@ atualizarCarrinho = () => {
   valorTotalCarrinho();
 };
 
-somaDosValores = 0;
-let resultado;
+removerDoCarrinho = (id) => {
+  const index = carrinho.findIndex(item => item.id === id);
 
-valorTotalCarrinho = () =>{
-  acumulaValor.forEach((valores)=>{
-    somaDosValores += valores;
-  })
-  resultado = somaDosValores;
+  if (index !== -1) {
+    carrinho.splice(index, 1);
+    atualizarCarrinho();
+  }
+};
+
+
+let somaDosValores = 0;
+let resultado = 0;
+
+valorTotalCarrinho = () => {
   somaDosValores = 0;
+  carrinho.map((key) => {
+    somaDosValores += key.quantidade * key.valor;
+  })
   let valorTotal = document.querySelector('.valor-total');
-  valorTotal.textContent = `Valor Total: R$${resultado}`
+  valorTotal.textContent = `Valor Total: R$${somaDosValores}`
 }
 
 
 
-  carrinho.map((keys)=>{
-    console.log(`${keys}: ${carrinho[keys]}`);
-  })
