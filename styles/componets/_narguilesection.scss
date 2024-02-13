@@ -1,0 +1,54 @@
+@import '../abstract/variaveis';
+
+.narguiles-section{
+    .container{
+        padding: 8px;
+    }
+    h2{
+        margin-left: 5px;
+    }
+    .narguiles{
+        padding: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 100%;
+        overflow: hidden;
+        .produto-single{
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            margin: 10px;  
+            align-items: center;  
+            .produto-image img{
+                height: 300px;
+            }
+            .informacoes-produtos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .nome-produto{
+                    color: black;
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                .valor-produto{
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                    font-size: 32px;
+                }
+                .variavel{
+                    text-transform: uppercase;
+                    padding: 8px;
+                }
+                .add-cart{
+                    cursor: pointer;
+                    padding: 8px;
+                    background-color: $primary-color;
+                    border: none;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

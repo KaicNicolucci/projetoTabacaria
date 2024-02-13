@@ -1,0 +1,40 @@
+@import '../abstract/variaveis';
+
+nav {
+    background-color: $background-color;
+    display: flex;
+    justify-content: space-between;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            display: flex;
+            align-items: center;
+            h1{
+                padding: 8px;
+                font-weight: bold;
+            };
+            img{
+                height: 70px;
+            }
+        }
+        .barra-de-pesquisa{
+            display: flex;
+            align-items: center;
+            input{
+                margin: 0;
+                padding: 6px 26px
+            };
+            button{
+                margin: 0;
+                padding: 2px;
+                background-color: black;
+                img{
+                    filter: invert(1);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+};

@@ -59,14 +59,15 @@ nav .container .barra-de-pesquisa button img {
   filter: invert(1);
   cursor: pointer;
 }
-nav .container .carrinho-de-compras {
+
+.carrinho-de-compras {
   position: relative;
   align-items: center;
 }
-nav .container .carrinho-de-compras img {
+.carrinho-de-compras img {
   cursor: pointer;
 }
-nav .container .carrinho-de-compras .carrinho {
+.carrinho-de-compras .carrinho {
   display: none;
   position: absolute;
   z-index: 1000;
@@ -76,42 +77,59 @@ nav .container .carrinho-de-compras .carrinho {
   background-color: #fff;
   border: 1px solid black;
 }
-nav .container .carrinho-de-compras .carrinho .container {
+.carrinho-de-compras .carrinho .container {
   display: flex;
   flex-direction: column;
   padding: 8px;
 }
-nav .container .carrinho-de-compras .carrinho .container .row {
+.carrinho-de-compras .carrinho .container .row {
   padding: 8px;
   max-width: 100%;
 }
-nav .container .carrinho-de-compras .carrinho .container .valor-total {
+.carrinho-de-compras .carrinho .container .valor-total {
   font-weight: bold;
   padding: 8px;
 }
-nav .container .carrinho-de-compras .carrinho .container .carrinho-footer {
+.carrinho-de-compras .carrinho .container .carrinho-footer {
   display: flex;
 }
-nav .container .carrinho-de-compras .carrinho .container .carrinho-footer .carrinho-button {
+.carrinho-de-compras .carrinho .container .carrinho-footer .carrinho-button {
   padding: 3px;
   background-color: green;
   border: 1px solid black;
 }
-nav .container .carrinho-de-compras .carrinho .container .carrinho-footer .carrinho-button a {
+.carrinho-de-compras .carrinho .container .carrinho-footer .carrinho-button a {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
 }
-nav .container .carrinho-de-compras .carrinho .container .carrinho-footer .carrinho-button:hover {
+.carrinho-de-compras .carrinho .container .carrinho-footer .carrinho-button:hover {
   background-color: rgb(0, 143, 0);
 }
-nav .container .carrinho-de-compras .carrinho .container .carrinho-footer .fechar {
+.carrinho-de-compras .carrinho .container .carrinho-footer .fechar {
   background-color: red;
   color: #fff;
   font-weight: bold;
   border: 1px solid black;
   cursor: pointer;
   padding: 6px;
+}
+
+.item-carrinho {
+  display: block;
+}
+.item-carrinho .container-carrinho {
+  display: flex;
+}
+.item-carrinho .container-carrinho img {
+  height: 80px;
+}
+.item-carrinho .container-carrinho button {
+  cursor: pointer;
+  background-color: #ccc;
+  font-weight: bold;
+  padding: 3px;
+  margin: 4px;
 }
 
 .atalhos {
@@ -205,23 +223,6 @@ nav .container .carrinho-de-compras .carrinho .container .carrinho-footer .fecha
   background-color: #FFD700;
   border: none;
   font-weight: 500;
-}
-
-.item-carrinho {
-  display: block;
-}
-.item-carrinho .container-carrinho {
-  display: flex;
-}
-.item-carrinho .container-carrinho img {
-  height: 80px;
-}
-.item-carrinho .container-carrinho button {
-  cursor: pointer;
-  background-color: #ccc;
-  font-weight: bold;
-  padding: 3px;
-  margin: 4px;
 }
 
 footer .container {

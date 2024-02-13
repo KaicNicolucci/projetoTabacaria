@@ -1,0 +1,58 @@
+@import '../abstract/variaveis';
+
+footer{
+    .container{
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .contatos{
+            align-items: center;
+            ul{
+                margin: 8px;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                li{
+                    display: flex;
+                }
+                a{
+                    align-items: center;
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 12px;
+                    color: #000000;
+                    font-weight: bold;
+                    img{
+                        width: 40px;
+                    }
+                }
+            }
+        }
+        .social-media{
+            align-items: center;
+            ul{
+                margin: 8px;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                li{
+                    display: flex;
+                }
+                a{
+                    align-items: center;
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 12px;
+                    color: #000000;
+                    font-weight: bold;
+                    img{
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
