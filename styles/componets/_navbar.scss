@@ -1,40 +1,36 @@
 @import '../abstract/variaveis';
 
-nav {
-    background-color: $background-color;
-    display: flex;
-    justify-content: space-between;
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .logo{
+@media (max-width: $tamanho-celular){
+    nav{
+        width: 100%;
+        background-color: $cor-secundaria;
+        padding: 8px;
+        .container{
+            max-width: 100%;
             display: flex;
             align-items: center;
-            h1{
-                padding: 8px;
-                font-weight: bold;
-            };
-            img{
-                height: 70px;
-            }
-        }
-        .barra-de-pesquisa{
-            display: flex;
-            align-items: center;
-            input{
-                margin: 0;
-                padding: 6px 26px
-            };
-            button{
-                margin: 0;
-                padding: 2px;
-                background-color: black;
+            justify-content: space-between;
+            .logo{
+                text-align: center;
                 img{
-                    filter: invert(1);
-                    cursor: pointer;
+                    height: 5vh;
                 }
+                h1{
+                    color: $cor-principal;
+                    font-size: 2vh;
+                }
+            };
+            .barra-de-pesquisa{
+                display: none;
+            }
+            .para-clicar{
+                filter: invert(1);
             }
         }
     }
-};
+}
+
+
+.carrinho{
+    display: none;
+}

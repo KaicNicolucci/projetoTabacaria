@@ -26,7 +26,14 @@ inicializarLoja = () => {
         `);
       });
 
-      $('.narguiles').slick({
+
+
+
+
+
+
+
+      $('.narguiles, .narguiles-grandes').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,

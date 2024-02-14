@@ -1,0 +1,16 @@
+@import '../abstract/variaveis';
+
+@media (max-width: $tamanho-celular){
+    .carrossel-informacoes{
+        height: 50%;
+        overflow-x: hidden;
+        .container{
+            background: url('.carrossel-informacoes-start');
+            background-position-y: center;
+            img{
+                height: 35vh;
+                overflow: hidden;
+            }
+        }
+    }
+}
