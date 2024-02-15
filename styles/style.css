@@ -12,6 +12,10 @@
   margin: 0 auto;
 }
 
+body {
+  background-color: #F5F7F8;
+}
+
 @media (max-width: 767px) {
   nav {
     width: 100%;
@@ -41,10 +45,11 @@
     filter: invert(1);
   }
 }
-.carrinho {
-  display: none;
+@media (max-width: 767px) {
+  .carrinho-de-compras .carrinho {
+    display: none;
+  }
 }
-
 @media (max-width: 767px) {
   .atalhos {
     width: 100%;
@@ -91,6 +96,7 @@
   .narguiles-section {
     background-color: #F5F7F8;
     width: 100%;
+    margin-bottom: 20px;
   }
   .narguiles-section .container {
     margin-top: 20px;
@@ -140,5 +146,45 @@
     background-color: #F4CE14;
     border: none;
     padding: 5px;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    background-color: #fff;
+    margin-top: 20px;
+    width: 100%;
+  }
+  footer .container {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .container .contatos {
+    padding: 10px;
+  }
+  footer .container .contatos ul {
+    display: flex;
+  }
+  footer .container .contatos ul a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    color: #495E57;
+  }
+  footer .container .social-media {
+    padding: 10px;
+  }
+  footer .container .social-media ul {
+    display: flex;
+  }
+  footer .container .social-media ul a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    color: #495E57;
   }
 }/*# sourceMappingURL=style.css.map */

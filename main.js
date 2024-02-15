@@ -26,6 +26,10 @@ inicializarLoja = () => {
           </div>
         `);
       });
+
+
+      /* Carrosseis Jquery */ 
+
       $('.carrossel-informacoes-start').slick({
         autoplay: true
       })
@@ -68,10 +72,7 @@ inicializarLoja = () => {
           }
         ]
       });
-    
-    
     })
-
     .catch(error => console.error('Erro ao carregar o JSON:', error));
 };
 

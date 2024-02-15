@@ -1,0 +1,42 @@
+@import '../abstract/variaveis';
+
+@media (max-width: $tamanho-celular){
+    footer{
+        background-color: #fff;
+        margin-top: 20px;
+        width: 100%;
+        .container{
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .contatos{
+                padding: 10px;
+                ul{
+                    display: flex;
+                    a{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 5px;
+                        text-decoration: none;
+                        color: $cor-secundaria;
+                    }
+                }
+            }
+            .social-media{
+                padding: 10px;
+                ul{
+                    display: flex;
+                    a{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 5px;
+                        text-decoration: none;
+                        color: $cor-secundaria;
+                    }
+                }
+            }
+        }
+    }
+}
