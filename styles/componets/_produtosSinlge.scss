@@ -7,12 +7,9 @@
         justify-content: center;
         overflow: hidden;
         .produto-single{
-            display: flex;
-            flex-direction: column;
-
             .produto-image{
                 img{
-                    height: 20vh;
+                    height: 27vh;
                 }
             }
             .informacoes-produtos{

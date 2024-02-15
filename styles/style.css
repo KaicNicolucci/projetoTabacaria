@@ -115,12 +115,8 @@
     justify-content: center;
     overflow: hidden;
   }
-  .produto .produto-single {
-    display: flex;
-    flex-direction: column;
-  }
   .produto .produto-single .produto-image img {
-    height: 20vh;
+    height: 27vh;
   }
   .produto .produto-single .informacoes-produtos {
     display: flex;

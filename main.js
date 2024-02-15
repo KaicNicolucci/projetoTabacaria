@@ -13,7 +13,8 @@ inicializarLoja = () => {
       data.map((val) => {
         narguiles.insertAdjacentHTML('beforeend', `
           <div class="produto-single">
-            <div class="produto-image">
+            <div class="produto-image" style="display: flex;
+            flex-direction: column;">
               <img src="${val.imagem}">
             </div>
             <div class="informacoes-produtos">
