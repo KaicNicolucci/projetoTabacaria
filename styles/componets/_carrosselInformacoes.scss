@@ -5,8 +5,7 @@
         height: 50%;
         overflow-x: hidden;
         .container{
-            background: url('.carrossel-informacoes-start');
-            background-position-y: center;
+            display: flex;
             img{
                 height: 35vh;
                 overflow: hidden;
