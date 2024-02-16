@@ -1,17 +1,11 @@
 @import '../abstract/variaveis';
 
-@media (max-width: $tamanho-celular){
     .produto{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         overflow: hidden;
         .produto-single{
-            .produto-image{
-                img{
-                    height: 27vh;
-                }
-            }
             .informacoes-produtos{
                 display: flex;
                 flex-direction: column;
@@ -37,4 +31,27 @@
             }
         }
     }
-}
+
+    @media (min-width: $tamanho-desktop){
+        .produto-image{
+            img{
+                height: 350px;
+            }
+        }
+    }
+
+    @media (max-width: $tamanho-max-tablet){
+        .produto-image{
+            img{
+                height: 30vh;
+            }
+        }
+    }
+
+    @media (max-width: $tamanho-min-tablet){
+        .produto-image{
+            img{
+                height: 27vh;
+            }
+        }
+    }

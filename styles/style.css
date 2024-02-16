@@ -16,6 +16,16 @@ body {
   background-color: #F5F7F8;
 }
 
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1900px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+}
 @media (max-width: 767px) {
   nav {
     width: 100%;
@@ -45,20 +55,58 @@ body {
     filter: invert(1);
   }
 }
-@media (max-width: 767px) {
-  .carrinho-de-compras .carrinho {
-    display: none;
+@media (min-width: 1024px) {
+  nav {
+    width: 100%;
+    background-color: #495E57;
+    padding: 8px;
+  }
+  nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .container .logo {
+    display: flex;
+    align-items: center;
+  }
+  nav .container .logo img {
+    height: 70px;
+  }
+  nav .container .logo h1 {
+    color: #F4CE14;
+    font-size: 40px;
+  }
+  nav .container .barra-de-pesquisa {
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    border-radius: 8px;
+  }
+  nav .container .barra-de-pesquisa input {
+    padding-left: 140px;
+    padding-right: 140px;
+    font-size: 25px;
+  }
+  nav .container .barra-de-pesquisa button {
+    padding: 6px;
+    overflow: hidden;
+  }
+  nav .container .para-clicar {
+    height: 65px;
+    filter: invert(1);
   }
 }
+.carrinho-de-compras .carrinho {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .atalhos {
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: #45474B;
-  }
-  .atalhos .container {
-    width: 100%;
   }
   .atalhos .container ul {
     display: flex;
@@ -79,6 +127,27 @@ body {
     color: #fff;
   }
 }
+@media (min-width: 1024px) {
+  .atalhos {
+    background-color: #45474B;
+  }
+  .atalhos .container ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .atalhos .container ul li {
+    padding: 25px;
+  }
+  .atalhos .container ul li a {
+    text-decoration: none;
+    color: #F4CE14;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .atalhos .container ul li a:hover {
+    color: #fff;
+  }
+}
 @media (max-width: 767px) {
   .carrossel-informacoes {
     height: 50%;
@@ -92,99 +161,105 @@ body {
     overflow: hidden;
   }
 }
-@media (max-width: 767px) {
-  .narguiles-section {
-    background-color: #F5F7F8;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .narguiles-section .container {
-    margin-top: 20px;
-    background-color: #fff;
-    border-radius: 15px;
-    max-width: 100%;
-  }
-  .narguiles-section .container .narguiles {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .narguiles-section .container .narguiles h2 {
-    padding-bottom: 12px;
-    margin-left: 12px;
+.narguiles-section {
+  background-color: #F5F7F8;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.narguiles-section .container {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.narguiles-section .container .narguiles {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.narguiles-section .container .narguiles h2 {
+  padding-bottom: 12px;
+  margin-left: 12px;
+}
+
+.produto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+.produto .produto-single .informacoes-produtos {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+.produto .produto-single .informacoes-produtos .nome-produto {
+  text-align: center;
+  font-weight: bold;
+}
+.produto .produto-single .informacoes-produtos .variavel {
+  display: none;
+}
+.produto .produto-single .informacoes-produtos .valor-produto {
+  text-align: center;
+  margin-top: 6px;
+}
+.produto .produto-single .informacoes-produtos .add-cart {
+  margin-top: 4px;
+  font-weight: bold;
+  background-color: #F4CE14;
+  border: none;
+  padding: 5px;
+}
+
+@media (min-width: 1024px) {
+  .produto-image img {
+    height: 350px;
   }
 }
-@media (max-width: 767px) {
-  .produto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow: hidden;
+@media (max-width: 1023px) {
+  .produto-image img {
+    height: 30vh;
   }
-  .produto .produto-single .produto-image img {
+}
+@media (max-width: 768px) {
+  .produto-image img {
     height: 27vh;
   }
-  .produto .produto-single .informacoes-produtos {
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-  }
-  .produto .produto-single .informacoes-produtos .nome-produto {
-    text-align: center;
-    font-weight: bold;
-  }
-  .produto .produto-single .informacoes-produtos .variavel {
-    display: none;
-  }
-  .produto .produto-single .informacoes-produtos .valor-produto {
-    text-align: center;
-    margin-top: 6px;
-  }
-  .produto .produto-single .informacoes-produtos .add-cart {
-    margin-top: 4px;
-    font-weight: bold;
-    background-color: #F4CE14;
-    border: none;
-    padding: 5px;
-  }
 }
-@media (max-width: 767px) {
-  footer {
-    background-color: #fff;
-    margin-top: 20px;
-    width: 100%;
-  }
-  footer .container {
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  footer .container .contatos {
-    padding: 10px;
-  }
-  footer .container .contatos ul {
-    display: flex;
-  }
-  footer .container .contatos ul a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-    text-decoration: none;
-    color: #495E57;
-  }
-  footer .container .social-media {
-    padding: 10px;
-  }
-  footer .container .social-media ul {
-    display: flex;
-  }
-  footer .container .social-media ul a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-    text-decoration: none;
-    color: #495E57;
-  }
+footer {
+  margin-top: 20px;
+  width: 100%;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+footer .container .contatos {
+  padding: 10px;
+}
+footer .container .contatos ul {
+  display: flex;
+}
+footer .container .contatos ul a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  text-decoration: none;
+  color: #495E57;
+}
+footer .container .social-media {
+  padding: 10px;
+}
+footer .container .social-media ul {
+  display: flex;
+}
+footer .container .social-media ul a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  text-decoration: none;
+  color: #495E57;
 }/*# sourceMappingURL=style.css.map */

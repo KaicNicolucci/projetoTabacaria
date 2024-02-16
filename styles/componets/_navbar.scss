@@ -29,3 +29,46 @@
         }
     }
 }
+
+@media (min-width: $tamanho-desktop) {
+    nav{
+        width: 100%;
+        background-color: $cor-secundaria;
+        padding: 8px;
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logo{
+                display: flex;
+                align-items: center;
+                img{
+                    height: 70px;
+                }
+                h1{
+                    color: $cor-principal;
+                    font-size: 40px;
+                }
+            };
+            .barra-de-pesquisa{
+                display: flex;
+                justify-content: center;
+                height: 45px;
+                border-radius: 8px;
+                input{
+                    padding-left: 140px;
+                    padding-right: 140px;
+                    font-size: 25px;
+                }
+                button{
+                    padding: 6px;
+                    overflow: hidden;
+                }
+            }
+            .para-clicar{
+                height: 65px;
+                filter: invert(1);
+            }
+        }
+    }
+}

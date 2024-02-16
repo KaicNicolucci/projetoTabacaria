@@ -37,11 +37,11 @@ inicializarLoja = () => {
         dots: true,
         infinite: true,
         speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 5,
+        slidesToScroll: 2,
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1440,
             settings: {
               slidesToShow: 4,
               slidesToScroll: 3,

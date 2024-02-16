@@ -1,14 +1,13 @@
 @import '../abstract/variaveis';
 
-@media (max-width: $tamanho-celular){
+
     footer{
-        background-color: #fff;
         margin-top: 20px;
         width: 100%;
         .container{
-            max-width: 100%;
             display: flex;
             justify-content: space-between;
+            background-color: #fff;
             .contatos{
                 padding: 10px;
                 ul{
@@ -39,4 +38,3 @@
             }
         }
     }
-}

@@ -17,3 +17,14 @@ body{
     background-color: $cor-fundo;
 }
 
+@media (min-width: $tamanho-desktop){
+    .container{
+        max-width: 1900px;
+    }
+}
+
+@media (max-width: $tamanho-celular) {
+    .container{
+        max-width: 100%;
+    }
+}

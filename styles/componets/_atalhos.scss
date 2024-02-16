@@ -7,7 +7,6 @@
         justify-content: center;
         background-color: $cor-terciaria;
         .container{
-            width: 100%;
             ul{
                 display: flex;
                 justify-content: space-between;
@@ -19,6 +18,30 @@
                         color: $cor-principal;
                         font-weight: 500;
                         font-size: 80%;
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+            }            
+        }
+    }
+}
+
+@media (min-width: $tamanho-desktop){
+    .atalhos{
+        background-color: $cor-terciaria;
+        .container{
+            ul{
+                display: flex;
+                justify-content: space-around;
+                li{
+                    padding: 25px;
+                    a{
+                        text-decoration: none;
+                        color: $cor-principal;
+                        font-weight: 500;
+                        font-size: 30px;
                         &:hover{
                             color: #fff;
                         }

@@ -1,6 +1,6 @@
 @import '../abstract/variaveis';
 
-@media (max-width: $tamanho-celular){
+
     .narguiles-section{
         background-color: $cor-fundo;
         width: 100%;
@@ -9,7 +9,6 @@
             margin-top: 20px;
             background-color: #fff;
             border-radius: 15px;
-            max-width: 100%;
             .narguiles{
                 margin-top: 20px;
                 display: flex;
@@ -21,4 +20,3 @@
             }
         }
     }
-}
